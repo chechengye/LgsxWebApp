@@ -38,4 +38,13 @@ public class UserServiceImpl implements UserService {
         }
         return 0;
     }
+
+    /**
+     * 登录校验
+     */
+    @Override
+    public User login(String username, String password) {
+
+        return userDao.login(username , password);
+    }
 }

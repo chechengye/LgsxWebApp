@@ -16,7 +16,7 @@ public class C3p0Util {
         try {
             dataSource = new ComboPooledDataSource();
             dataSource.setDriverClass("com.mysql.jdbc.Driver");
-            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/lgsx?useUnicode=true&characterEncoding=utf-8&serverTimeZone=GMT");
+            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/lgsx?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT");
             dataSource.setUser("root");
             dataSource.setPassword("root");
         } catch (PropertyVetoException e) {
